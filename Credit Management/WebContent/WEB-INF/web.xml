@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ETI-AHFL2</display-name>
+  <welcome-file-list>
+    <welcome-file>HomePage.jsp</welcome-file>
+    <welcome-file>AllUsers.jsp</welcome-file>
+    <welcome-file>SelectViewOneUser.jsp</welcome-file>
+    <welcome-file>TransferCredit.jsp</welcome-file>
+    <welcome-file>AllUsersView.jsp</welcome-file>
+   
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>AllUsers1</display-name>
+    <servlet-name>AllUsers1</servlet-name>
+    <servlet-class>com.AllUsers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllUsers1</servlet-name>
+    <url-pattern>/AllUsers1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>OneUser</display-name>
+    <servlet-name>OneUser</servlet-name>
+    <servlet-class>com.OneUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OneUser</servlet-name>
+    <url-pattern>/OneUser</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <description></description>
+    <display-name>Transfer</display-name>
+    <servlet-name>Transfer</servlet-name>
+    <servlet-class>com.Transfer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Transfer</servlet-name>
+    <url-pattern>/Transfer</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <description></description>
+    <display-name>ViewAllUsers</display-name>
+    <servlet-name>ViewAllUsers</servlet-name>
+    <servlet-class>com.AllUsersView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewAllUsers</servlet-name>
+    <url-pattern>/ViewAllUsers</url-pattern>
+  </servlet-mapping> 
+</web-app>
+</element>
